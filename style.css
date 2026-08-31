@@ -1,0 +1,548 @@
+/* =========================================================
+   GLOBAL / RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3d4635;
+    color: #f5f2e8;
+
+    line-height: 1.6;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Makes images behave nicely */
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* Default links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: relative;
+
+    min-height: 170px;
+
+    padding: 35px 4%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #3d4635;
+}
+
+
+/* =========================================================
+   WEBSITE TITLE
+========================================================= */
+
+.site-title h1 {
+
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.main-navigation {
+    display: flex;
+    gap: 28px;
+
+    margin-top: 20px;
+}
+
+.main-navigation a {
+    font-size: 1rem;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.main-navigation a:hover {
+    opacity: 0.65;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.social-links {
+    position: absolute;
+
+    left: 4%;
+    top: 65px;
+
+    display: flex;
+    gap: 20px;
+
+
+    font-size: 0.8rem;
+}
+
+.social-links a {
+    opacity: 0.85;
+}
+
+.social-links a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    text-align: center;
+
+    padding-top: 70px;
+}
+
+
+/* Text above image */
+.hero-text {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 20px 30px 70px;
+}
+
+.hero-text h2 {
+
+
+    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    font-weight: 300;
+
+    line-height: 1.1;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image {
+    width: 100%;
+    height: 620px;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-header {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   LATEST BLOGS
+========================================================= */
+
+.latest-blogs {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 120px 40px;
+}
+
+
+/* Three columns */
+.blog-preview-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+}
+
+
+/* Individual blog */
+.blog-preview {
+    text-align: center;
+}
+
+
+/* Blog image */
+.blog-preview img {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    margin-bottom: 25px;
+}
+
+
+/* Blog title */
+.blog-preview h3 {
+
+
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+
+/* Blog description */
+.blog-preview p {
+    max-width: 320px;
+
+    margin: 0 auto 20px;
+
+    font-size: 0.95rem;
+}
+
+
+/* Read more */
+.blog-preview > a {
+    text-decoration: underline;
+
+    text-underline-offset: 4px;
+
+    opacity: 0.8;
+}
+
+.blog-preview > a:hover {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   VIEW ALL BLOGS
+========================================================= */
+
+.all-blogs-link {
+    text-align: center;
+
+    margin-top: 70px;
+}
+
+.all-blogs-link a {
+    display: inline-block;
+
+    border: 1px solid #f5f2e8;
+
+    padding: 13px 30px;
+
+
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.all-blogs-link a:hover {
+    background-color: #f5f2e8;
+    color: #3d4635;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 120px 40px;
+
+    border-top: 1px solid rgba(245, 242, 232, 0.4);
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.4fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   ABOUT IMAGE
+========================================================= */
+
+.about-image img {
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   ABOUT TEXT
+========================================================= */
+
+.about-text h2 {
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    max-width: 600px;
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    border-top: 1px solid rgba(245, 242, 232, 0.4);
+
+    padding: 50px 4%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.85rem;
+}
+
+
+/* Footer socials should NOT use the absolute positioning
+   from our header social links.
+*/
+
+.footer-socials {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer-socials a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Header */
+    .site-header {
+        padding-top: 30px;
+    }
+
+    .social-links {
+        position: static;
+
+        margin-top: 25px;
+
+        order: 3;
+    }
+
+
+    /* Blogs go from 3 → 1 columns */
+    .blog-preview-container {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+    .blog-preview {
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+
+    /* About goes vertical */
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-image {
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        min-height: auto;
+
+        padding: 30px 20px;
+    }
+
+
+    .site-title h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .main-navigation {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px 22px;
+    }
+
+
+    .hero {
+        padding-top: 40px;
+    }
+
+
+    .hero-text {
+        padding-bottom: 50px;
+    }
+
+
+    .hero-image {
+        height: 450px;
+    }
+
+
+    .latest-blogs {
+        padding: 80px 20px;
+    }
+
+
+    .about {
+        padding: 80px 20px;
+    }
+
+
+    .site-footer {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+}
